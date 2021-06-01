@@ -7,3 +7,7 @@ C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csproj.Generate
 C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.exe
 C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.Log_In_Form.resources
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csproj.CopyComplete
