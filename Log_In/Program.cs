@@ -16,7 +16,7 @@ namespace Log_In
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Log_In_Form());
         }
     }
 }

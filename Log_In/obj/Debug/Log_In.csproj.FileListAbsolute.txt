@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\bin\Debug\Log_In.exe.config
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\bin\Debug\Log_In.exe
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\bin\Debug\Log_In.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.Properties.Resources.resources
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csproj.GenerateResource.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.exe
+C:\Users\User\source\repos\DBMS_by_Riste\Log_In\obj\Debug\Log_In.pdb
