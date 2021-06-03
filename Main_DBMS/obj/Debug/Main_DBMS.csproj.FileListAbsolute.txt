@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\Main_DBMS.exe.config
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\Main_DBMS.exe
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\Main_DBMS.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.Properties.Resources.resources
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csproj.GenerateResource.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.exe
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.frmDBMS.resources

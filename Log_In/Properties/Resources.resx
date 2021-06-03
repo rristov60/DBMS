@@ -118,14 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Underscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="server" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="passIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\passIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Greater_thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Greater_thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,19 +139,70 @@
   <data name="Greater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Greater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Underscore_thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Underscore_thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Underscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Underscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="passIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Underscore_thin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Underscore_thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="userIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\userIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="server" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Underscore_thin_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underscore_thin_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underscore_thin_95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

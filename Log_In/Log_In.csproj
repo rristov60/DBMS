@@ -110,5 +110,62 @@
   <ItemGroup>
     <None Include="Resources\server.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underscore_thin_95.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

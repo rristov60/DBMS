@@ -34,13 +34,14 @@ namespace Log_In
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.timerBlink = new System.Windows.Forms.Timer(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerBlink2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,15 +87,6 @@ namespace Log_In
             this.shapeContainer1.TabIndex = 2;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape2
-            // 
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 264;
-            this.lineShape2.X2 = 586;
-            this.lineShape2.Y1 = 81;
-            this.lineShape2.Y2 = 81;
-            // 
             // lineShape3
             // 
             this.lineShape3.Enabled = false;
@@ -103,6 +95,15 @@ namespace Log_In
             this.lineShape3.X2 = 586;
             this.lineShape3.Y1 = 136;
             this.lineShape3.Y2 = 136;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 264;
+            this.lineShape2.X2 = 586;
+            this.lineShape2.Y1 = 81;
+            this.lineShape2.Y2 = 81;
             // 
             // btnLogIn
             // 
@@ -124,6 +125,7 @@ namespace Log_In
             // 
             // timerBlink
             // 
+            this.timerBlink.Interval = 1;
             this.timerBlink.Tick += new System.EventHandler(this.timerBlink_Tick);
             // 
             // pictureBox3
@@ -156,6 +158,11 @@ namespace Log_In
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // timerBlink2
+            // 
+            this.timerBlink2.Interval = 1;
+            this.timerBlink2.Tick += new System.EventHandler(this.timerBlink2_Tick);
+            // 
             // Log_In_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +176,7 @@ namespace Log_In
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.shapeContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Log_In_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -193,6 +201,7 @@ namespace Log_In
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Timer timerBlink2;
     }
 }
 
