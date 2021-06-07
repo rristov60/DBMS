@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\bin\Debug\netstandard2.0\SQL.deps.json
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\bin\Debug\netstandard2.0\SQL.dll
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\bin\Debug\netstandard2.0\SQL.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\bin\Debug\netstandard2.0\Security.dll
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\bin\Debug\netstandard2.0\Security.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.AssemblyInfo.cs
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.csproj.CopyComplete
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.dll
+C:\Users\User\source\repos\DBMS_by_Riste\SQL\obj\Debug\netstandard2.0\SQL.pdb

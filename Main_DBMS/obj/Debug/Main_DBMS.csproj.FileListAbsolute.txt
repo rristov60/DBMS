@@ -8,3 +8,8 @@ C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csproj.Co
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.exe
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.pdb
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.frmDBMS.resources
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\System.Data.SqlClient.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\System.Data.SqlClient.xml
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csproj.CopyComplete
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\SQL.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\SQL.pdb

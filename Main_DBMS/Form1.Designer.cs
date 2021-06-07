@@ -31,30 +31,30 @@ namespace Main_DBMS
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDBMS));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Filters = new System.Windows.Forms.GroupBox();
             this.saveChangesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.discardChangesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administratorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.regularUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readOnlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regualarUSerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.discardChangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.table = new System.Windows.Forms.DataGridView();
+            this.Filters = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -74,33 +74,6 @@ namespace Main_DBMS
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // addUserToolStripMenuItem
-            // 
-            this.addUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.addUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administratorToolStripMenuItem,
-            this.regualarUSerToolStripMenuItem,
-            this.changePasswordToolStripMenuItem});
-            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.addUserToolStripMenuItem.Text = "Users";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.darkModeToolStripMenuItem});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.viewToolStripMenuItem.Text = "View";
-            // 
-            // formatToolStripMenuItem
-            // 
-            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.discardChangesToolStripMenuItem});
-            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
-            this.formatToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.formatToolStripMenuItem.Text = "Data Base";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -110,36 +83,6 @@ namespace Main_DBMS
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(40, 20);
             this.toolStripMenuItem1.Text = "File";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.applicationToolStripMenuItem,
-            this.userToolStripMenuItem});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 401);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // Filters
-            // 
-            this.Filters.BackColor = System.Drawing.Color.White;
-            this.Filters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filters.Font = new System.Drawing.Font("Futura Bk BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filters.Location = new System.Drawing.Point(806, 27);
-            this.Filters.Name = "Filters";
-            this.Filters.Size = new System.Drawing.Size(403, 411);
-            this.Filters.TabIndex = 2;
-            this.Filters.TabStop = false;
-            this.Filters.Text = "Filters";
             // 
             // saveChangesToolStripMenuItem1
             // 
@@ -169,6 +112,17 @@ namespace Main_DBMS
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // addUserToolStripMenuItem
+            // 
+            this.addUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.addUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administratorToolStripMenuItem,
+            this.regualarUSerToolStripMenuItem,
+            this.changePasswordToolStripMenuItem});
+            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.addUserToolStripMenuItem.Text = "Users";
             // 
             // administratorToolStripMenuItem
             // 
@@ -222,6 +176,14 @@ namespace Main_DBMS
             this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.darkModeToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
             // darkModeToolStripMenuItem
             // 
             this.darkModeToolStripMenuItem.BackColor = System.Drawing.Color.White;
@@ -249,6 +211,14 @@ namespace Main_DBMS
             this.disabledToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.disabledToolStripMenuItem.Text = "Disabled";
             // 
+            // formatToolStripMenuItem
+            // 
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.discardChangesToolStripMenuItem});
+            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
+            this.formatToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.formatToolStripMenuItem.Text = "Data Base";
+            // 
             // discardChangesToolStripMenuItem
             // 
             this.discardChangesToolStripMenuItem.BackColor = System.Drawing.Color.White;
@@ -258,13 +228,22 @@ namespace Main_DBMS
             this.discardChangesToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.discardChangesToolStripMenuItem.Text = "Change Table";
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.applicationToolStripMenuItem,
+            this.userToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
             // applicationToolStripMenuItem
             // 
             this.applicationToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.applicationToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.info;
             this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
             this.applicationToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.applicationToolStripMenuItem.Text = "Application";
             // 
             // userToolStripMenuItem
@@ -273,8 +252,32 @@ namespace Main_DBMS
             this.userToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.group;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.userToolStripMenuItem.Text = "User";
+            // 
+            // table
+            // 
+            this.table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.table.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.table.BackgroundColor = System.Drawing.Color.White;
+            this.table.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.table.Location = new System.Drawing.Point(12, 37);
+            this.table.Name = "table";
+            this.table.Size = new System.Drawing.Size(776, 401);
+            this.table.TabIndex = 1;
+            // 
+            // Filters
+            // 
+            this.Filters.BackColor = System.Drawing.Color.White;
+            this.Filters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Filters.Font = new System.Drawing.Font("Futura Bk BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filters.Location = new System.Drawing.Point(806, 27);
+            this.Filters.Name = "Filters";
+            this.Filters.Size = new System.Drawing.Size(403, 411);
+            this.Filters.TabIndex = 2;
+            this.Filters.TabStop = false;
+            this.Filters.Text = "Filters";
             // 
             // frmDBMS
             // 
@@ -283,7 +286,7 @@ namespace Main_DBMS
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1221, 450);
             this.Controls.Add(this.Filters);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.table);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
@@ -292,9 +295,10 @@ namespace Main_DBMS
             this.Name = "frmDBMS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DBMS";
+            this.Load += new System.EventHandler(this.frmDBMS_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,7 +326,7 @@ namespace Main_DBMS
         private System.Windows.Forms.ToolStripMenuItem applicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView table;
         private System.Windows.Forms.GroupBox Filters;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }

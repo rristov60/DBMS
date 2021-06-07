@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\DBMS_by_Riste\Security\bin\Debug\netstandard2.0\Security.deps.json
+C:\Users\User\source\repos\DBMS_by_Riste\Security\bin\Debug\netstandard2.0\Security.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Security\bin\Debug\netstandard2.0\Security.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.AssemblyInfo.cs
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Security\obj\Debug\netstandard2.0\Security.pdb

@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using Main_DBMS;
+using Security;
+using SQL;
 
 namespace Log_In
 {
@@ -109,8 +112,6 @@ namespace Log_In
 
         private void btnLogIn_MouseLeave(object sender, EventArgs e)
         {
-            //btnLogIn.ForeColor = Color.Gray;
-            //btnLogIn.FlatAppearance.BorderColor = Color.Gray;
             timerBlink.Stop();
             timerBlink2.Stop();
 
@@ -119,8 +120,6 @@ namespace Log_In
 
         private void btnLogIn_MouseEnter(object sender, EventArgs e)
         {
-            //btnLogIn.ForeColor = Color.Black;
-            //btnLogIn.FlatAppearance.BorderColor = Color.Black;
             timerBlink.Start();
         }
 
@@ -140,6 +139,27 @@ namespace Log_In
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            this.UseWaitCursor = true;
+
+            if (Queries.LogInQuery(txtUsername.Text, Hashing.PasswordHashing(txtPassword.Text)))
+            {
+                frmDBMS formDBMS0 = new frmDBMS();
+                this.UseWaitCursor = false;
+                formDBMS0.Show();
+                this.Hide();
+            }
+            else
+            {
+                this.UseWaitCursor = false;
+                if (Current_User.exception)
+                {
+                    MessageBox.Show("Couldn't connect to the database, please try again later", "Connection to DB", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Username or Password !!", "Username & Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
 
         }
 
