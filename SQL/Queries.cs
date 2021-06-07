@@ -71,7 +71,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
+            CurrentTable.tableKind = "sales";
 
         }
 
@@ -95,8 +97,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
-
+            CurrentTable.tableKind = "authors";
         }
 
         public static void TableDiscounts()
@@ -119,7 +122,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
+            CurrentTable.tableKind = "discounts";
         }
 
         public static void TableEmployee()
@@ -142,7 +147,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
+            CurrentTable.tableKind = "employee";
 
         }
 
@@ -166,7 +173,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
+            CurrentTable.tableKind = "jobs";
         }
 
         public static void TablePublishers()
@@ -189,8 +198,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
-
+            CurrentTable.tableKind = "publishers";
         }
 
         public static void TableRoyalties()
@@ -213,8 +223,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
-
+            CurrentTable.tableKind = "royalties";
         }
 
         public static void TableStores()
@@ -238,6 +249,8 @@ namespace SQL
 
             sda.Fill(CurrentTable.dtb);
 
+            CurrentTable.tableKind = "stores";
+
         }
 
         public static void TableTitleAuthors()
@@ -260,7 +273,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
+            CurrentTable.tableKind = "titleAuthors";
         }
 
         public static void TableTitles()
@@ -283,8 +298,9 @@ namespace SQL
             SqlDataAdapter sda = new SqlDataAdapter(cmd.CommandText, connectionString);
 
             sda.Fill(CurrentTable.dtb);
+            sda.Fill(CurrentTable.reserve);
 
-
+            CurrentTable.tableKind = "titles";
         }
 
     }

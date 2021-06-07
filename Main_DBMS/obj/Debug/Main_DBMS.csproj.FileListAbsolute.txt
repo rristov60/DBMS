@@ -13,3 +13,6 @@ C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\System.Data.SqlClie
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.csproj.CopyComplete
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\SQL.dll
 C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\SQL.pdb
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\obj\Debug\Main_DBMS.Select_Table_Form.resources
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\User\source\repos\DBMS_by_Riste\Main_DBMS\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml

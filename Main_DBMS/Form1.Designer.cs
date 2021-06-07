@@ -47,14 +47,16 @@ namespace Main_DBMS
             this.enabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.discardChangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeTableChangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.table = new System.Windows.Forms.DataGridView();
             this.Filters = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -102,6 +104,7 @@ namespace Main_DBMS
             this.discardChangesToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.discardChangesToolStripMenuItem1.Size = new System.Drawing.Size(235, 22);
             this.discardChangesToolStripMenuItem1.Text = "Discard Changes";
+            this.discardChangesToolStripMenuItem1.Click += new System.EventHandler(this.discardChangesToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -214,19 +217,20 @@ namespace Main_DBMS
             // formatToolStripMenuItem
             // 
             this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.discardChangesToolStripMenuItem});
+            this.changeTableChangesToolStripMenuItem});
             this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
             this.formatToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.formatToolStripMenuItem.Text = "Data Base";
             // 
-            // discardChangesToolStripMenuItem
+            // changeTableChangesToolStripMenuItem
             // 
-            this.discardChangesToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.discardChangesToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.Table_icon;
-            this.discardChangesToolStripMenuItem.Name = "discardChangesToolStripMenuItem";
-            this.discardChangesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.discardChangesToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.discardChangesToolStripMenuItem.Text = "Change Table";
+            this.changeTableChangesToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.changeTableChangesToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.Table_icon;
+            this.changeTableChangesToolStripMenuItem.Name = "changeTableChangesToolStripMenuItem";
+            this.changeTableChangesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.changeTableChangesToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.changeTableChangesToolStripMenuItem.Text = "Change Table";
+            this.changeTableChangesToolStripMenuItem.Click += new System.EventHandler(this.changeTableChangesToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -243,8 +247,9 @@ namespace Main_DBMS
             this.applicationToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.info;
             this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
             this.applicationToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.applicationToolStripMenuItem.Text = "Application";
+            this.applicationToolStripMenuItem.Click += new System.EventHandler(this.applicationToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
             // 
@@ -252,8 +257,9 @@ namespace Main_DBMS
             this.userToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.group;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.userToolStripMenuItem.Text = "User";
+            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // table
             // 
@@ -279,15 +285,24 @@ namespace Main_DBMS
             this.Filters.TabStop = false;
             this.Filters.Text = "Filters";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.Filters);
+            this.panel1.Controls.Add(this.table);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1221, 450);
+            this.panel1.TabIndex = 3;
+            // 
             // frmDBMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1221, 450);
-            this.Controls.Add(this.Filters);
-            this.Controls.Add(this.table);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -299,6 +314,7 @@ namespace Main_DBMS
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,7 +334,7 @@ namespace Main_DBMS
         private System.Windows.Forms.ToolStripMenuItem enabledToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem disabledToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem discardChangesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeTableChangesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saveChangesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem discardChangesToolStripMenuItem1;
@@ -329,6 +345,7 @@ namespace Main_DBMS
         private System.Windows.Forms.DataGridView table;
         private System.Windows.Forms.GroupBox Filters;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

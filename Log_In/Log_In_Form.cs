@@ -139,18 +139,17 @@ namespace Log_In
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            this.UseWaitCursor = true;
+            this.Cursor = Cursors.WaitCursor;
 
             if (Queries.LogInQuery(txtUsername.Text, Hashing.PasswordHashing(txtPassword.Text)))
             {
                 frmDBMS formDBMS0 = new frmDBMS();
-                this.UseWaitCursor = false;
                 formDBMS0.Show();
                 this.Hide();
             }
             else
             {
-                this.UseWaitCursor = false;
+                this.Cursor = Cursors.Default;
                 if (Current_User.exception)
                 {
                     MessageBox.Show("Couldn't connect to the database, please try again later", "Connection to DB", MessageBoxButtons.OK, MessageBoxIcon.Error);

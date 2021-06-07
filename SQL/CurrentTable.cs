@@ -9,5 +9,8 @@ namespace SQL
     {
         public static DataTable dtb = new DataTable();
         public static bool Sucess = true;
+        public static string tableKind;
+        public static bool filled = true;
+        public static DataTable reserve = new DataTable();
     }
 }
