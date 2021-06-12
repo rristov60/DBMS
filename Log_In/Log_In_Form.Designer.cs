@@ -38,10 +38,10 @@ namespace Log_In
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.timerBlink = new System.Windows.Forms.Timer(this.components);
+            this.timerBlink2 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timerBlink2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,22 +128,27 @@ namespace Log_In
             this.timerBlink.Interval = 1;
             this.timerBlink.Tick += new System.EventHandler(this.timerBlink_Tick);
             // 
+            // timerBlink2
+            // 
+            this.timerBlink2.Interval = 1;
+            this.timerBlink2.Tick += new System.EventHandler(this.timerBlink2_Tick);
+            // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Log_In.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(266, 113);
+            this.pictureBox3.Image = global::Log_In.Properties.Resources.password;
+            this.pictureBox3.Location = new System.Drawing.Point(266, 107);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(17, 20);
+            this.pictureBox3.Size = new System.Drawing.Size(27, 26);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Log_In.Properties.Resources.usr;
-            this.pictureBox2.Location = new System.Drawing.Point(266, 58);
+            this.pictureBox2.Image = global::Log_In.Properties.Resources.card;
+            this.pictureBox2.Location = new System.Drawing.Point(266, 55);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 20);
+            this.pictureBox2.Size = new System.Drawing.Size(27, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -157,11 +162,6 @@ namespace Log_In
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // timerBlink2
-            // 
-            this.timerBlink2.Interval = 1;
-            this.timerBlink2.Tick += new System.EventHandler(this.timerBlink2_Tick);
             // 
             // Log_In_Form
             // 
