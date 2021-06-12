@@ -40,7 +40,7 @@ namespace Main_DBMS
             this.administratorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.regularUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readOnlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regualarUSerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,9 +53,16 @@ namespace Main_DBMS
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.table = new System.Windows.Forms.DataGridView();
             this.Filters = new System.Windows.Forms.GroupBox();
+            this.btnApplyFilters = new System.Windows.Forms.Button();
+            this.lblRadio = new System.Windows.Forms.Label();
+            this.radioOR = new System.Windows.Forms.RadioButton();
+            this.radioAnd = new System.Windows.Forms.RadioButton();
+            this.txtBoxFilters = new System.Windows.Forms.TextBox();
+            this.lblFilters = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
+            this.Filters.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,7 +128,7 @@ namespace Main_DBMS
             this.addUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.addUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administratorToolStripMenuItem,
-            this.regualarUSerToolStripMenuItem,
+            this.removeUserToolStripMenuItem,
             this.changePasswordToolStripMenuItem});
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
             this.addUserToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
@@ -146,6 +153,7 @@ namespace Main_DBMS
             this.administratorToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.administratorToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
             this.administratorToolStripMenuItem1.Text = "Administrator";
+            this.administratorToolStripMenuItem1.Click += new System.EventHandler(this.administratorToolStripMenuItem1_Click);
             // 
             // regularUserToolStripMenuItem
             // 
@@ -154,6 +162,7 @@ namespace Main_DBMS
             this.regularUserToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.regularUserToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.regularUserToolStripMenuItem.Text = "Regular User";
+            this.regularUserToolStripMenuItem.Click += new System.EventHandler(this.regularUserToolStripMenuItem_Click);
             // 
             // readOnlyToolStripMenuItem
             // 
@@ -162,14 +171,16 @@ namespace Main_DBMS
             this.readOnlyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.O)));
             this.readOnlyToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.readOnlyToolStripMenuItem.Text = "Read Only";
+            this.readOnlyToolStripMenuItem.Click += new System.EventHandler(this.readOnlyToolStripMenuItem_Click);
             // 
-            // regualarUSerToolStripMenuItem
+            // removeUserToolStripMenuItem
             // 
-            this.regualarUSerToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.regualarUSerToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.remove;
-            this.regualarUSerToolStripMenuItem.Name = "regualarUSerToolStripMenuItem";
-            this.regualarUSerToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.regualarUSerToolStripMenuItem.Text = "Remove User";
+            this.removeUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.removeUserToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.remove;
+            this.removeUserToolStripMenuItem.Name = "removeUserToolStripMenuItem";
+            this.removeUserToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.removeUserToolStripMenuItem.Text = "Remove User";
+            this.removeUserToolStripMenuItem.Click += new System.EventHandler(this.removeUserToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
@@ -247,7 +258,7 @@ namespace Main_DBMS
             this.applicationToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.info;
             this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
             this.applicationToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.applicationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.applicationToolStripMenuItem.Text = "Application";
             this.applicationToolStripMenuItem.Click += new System.EventHandler(this.applicationToolStripMenuItem_Click);
             // 
@@ -257,7 +268,7 @@ namespace Main_DBMS
             this.userToolStripMenuItem.Image = global::Main_DBMS.Properties.Resources.group;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.userToolStripMenuItem.Text = "User";
             this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
@@ -276,6 +287,12 @@ namespace Main_DBMS
             // Filters
             // 
             this.Filters.BackColor = System.Drawing.Color.White;
+            this.Filters.Controls.Add(this.btnApplyFilters);
+            this.Filters.Controls.Add(this.lblRadio);
+            this.Filters.Controls.Add(this.radioOR);
+            this.Filters.Controls.Add(this.radioAnd);
+            this.Filters.Controls.Add(this.txtBoxFilters);
+            this.Filters.Controls.Add(this.lblFilters);
             this.Filters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Filters.Font = new System.Drawing.Font("Futura Bk BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filters.Location = new System.Drawing.Point(806, 27);
@@ -284,6 +301,69 @@ namespace Main_DBMS
             this.Filters.TabIndex = 2;
             this.Filters.TabStop = false;
             this.Filters.Text = "Filters";
+            // 
+            // btnApplyFilters
+            // 
+            this.btnApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApplyFilters.Font = new System.Drawing.Font("Futura Bk BT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplyFilters.Location = new System.Drawing.Point(107, 363);
+            this.btnApplyFilters.Name = "btnApplyFilters";
+            this.btnApplyFilters.Size = new System.Drawing.Size(188, 27);
+            this.btnApplyFilters.TabIndex = 8;
+            this.btnApplyFilters.Text = "APPLY FILTERS";
+            this.btnApplyFilters.UseVisualStyleBackColor = true;
+            this.btnApplyFilters.Click += new System.EventHandler(this.btnApplyFilters_Click);
+            // 
+            // lblRadio
+            // 
+            this.lblRadio.AutoSize = true;
+            this.lblRadio.Location = new System.Drawing.Point(38, 297);
+            this.lblRadio.Name = "lblRadio";
+            this.lblRadio.Size = new System.Drawing.Size(328, 14);
+            this.lblRadio.TabIndex = 22;
+            this.lblRadio.Text = "Please select if you want these filters to be applied with AND or OR";
+            // 
+            // radioOR
+            // 
+            this.radioOR.AutoSize = true;
+            this.radioOR.Location = new System.Drawing.Point(213, 320);
+            this.radioOR.Name = "radioOR";
+            this.radioOR.Size = new System.Drawing.Size(41, 18);
+            this.radioOR.TabIndex = 21;
+            this.radioOR.TabStop = true;
+            this.radioOR.Text = "OR";
+            this.radioOR.UseVisualStyleBackColor = true;
+            // 
+            // radioAnd
+            // 
+            this.radioAnd.AutoSize = true;
+            this.radioAnd.Location = new System.Drawing.Point(144, 320);
+            this.radioAnd.Name = "radioAnd";
+            this.radioAnd.Size = new System.Drawing.Size(49, 18);
+            this.radioAnd.TabIndex = 20;
+            this.radioAnd.TabStop = true;
+            this.radioAnd.Text = "AND";
+            this.radioAnd.UseVisualStyleBackColor = true;
+            // 
+            // txtBoxFilters
+            // 
+            this.txtBoxFilters.Location = new System.Drawing.Point(9, 100);
+            this.txtBoxFilters.Multiline = true;
+            this.txtBoxFilters.Name = "txtBoxFilters";
+            this.txtBoxFilters.Size = new System.Drawing.Size(388, 190);
+            this.txtBoxFilters.TabIndex = 2;
+            this.txtBoxFilters.TextChanged += new System.EventHandler(this.txtBoxFilters_TextChanged);
+            // 
+            // lblFilters
+            // 
+            this.lblFilters.AutoSize = true;
+            this.lblFilters.Font = new System.Drawing.Font("Futura Bk BT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilters.Location = new System.Drawing.Point(6, 23);
+            this.lblFilters.Name = "lblFilters";
+            this.lblFilters.Size = new System.Drawing.Size(326, 64);
+            this.lblFilters.TabIndex = 0;
+            this.lblFilters.Text = "Please enter the filters below in the following format:\r\n\r\nColumnName1 = DesiredV" +
+    "alue1\r\nColumnName2 = DesiredValue2";
             // 
             // panel1
             // 
@@ -314,6 +394,8 @@ namespace Main_DBMS
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
+            this.Filters.ResumeLayout(false);
+            this.Filters.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -325,7 +407,7 @@ namespace Main_DBMS
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administratorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regualarUSerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administratorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem regularUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readOnlyToolStripMenuItem;
@@ -346,6 +428,12 @@ namespace Main_DBMS
         private System.Windows.Forms.GroupBox Filters;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblRadio;
+        private System.Windows.Forms.RadioButton radioOR;
+        private System.Windows.Forms.RadioButton radioAnd;
+        private System.Windows.Forms.TextBox txtBoxFilters;
+        private System.Windows.Forms.Label lblFilters;
+        private System.Windows.Forms.Button btnApplyFilters;
     }
 }
 
